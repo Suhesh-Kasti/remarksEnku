@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Tangerine:wght@400;700&display=swap');
+
+html{
+    height:32rem;
+    width:45rem;
+    overflow: hidden;
+}
+body{
+    background-color: #ececec;
+    padding: 10;
+    margin:10;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+.intro{
+    height:4rem;
+    width:45rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+}
+.content{
+    height:25.5rem;
+    width:45rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+button{
+    height:4rem;
+    width:12rem;
+    background-color: #ececec;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 10px 10px 15px rgba(70,70,70,0.12);
+    border: 8px solid #ececec;
+    border-radius: 200px ;
+    outline: none;
+    margin: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+button:active{
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 10px 10px 15px rgba(70,70,70,0.12), inset  -10px -10px 15px rgba(255,255,255,0.5), inset 10px 10px 15px rgba(70,70,70,0.12);;
+}
+input{
+    height:3.5rem;
+    width:15rem;
+    background-color: #ececec;
+    box-shadow: inset -10px -10px 15px rgba(255,255,255,0.5), inset 10px 10px 15px rgba(70,70,70,0.12);
+    border:none;
+    border-bottom: 8px solid #ececec;
+    outline: none;
+    font-size: 24px;
+}
+#measures{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
