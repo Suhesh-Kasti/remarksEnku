@@ -170,42 +170,52 @@ remind.addEventListener('click',async ()  => {
 
 // START OF FUNCTIONS
 function noSignal() {
-    ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
-        "Dear L1/RF Team, <br> As per conversation on <|NUMBER|>, the client has no signal displayed on his Clear TV. Unfortunately, the issue remained unsolved from my end after tuner search and factory defaulting the STB, thus please perform the necessities asap.<br>Regards,<br> The following data was verified by the client on his TV:<br>Signal Strength=0<br>Signal Quality=0 ";
+    const textArea = document.querySelector('.ajax__html_editor_extender_texteditor');
+    textArea.innerHTML =
+        "Dear L1/RF Team, </br> As per conversation on <|NUMBER|>, the client has no signal displayed on his Clear TV. Unfortunately, the issue remained unsolved from my end after tuner search and factory defaulting the STB, thus please perform the necessities asap.</br>Regards,</br> The following data was verified by the client on his TV:</br>Signal Strength=0</br>Signal Quality=0 ";
 }
 function noInternetSolved() {
-    ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
+    const textArea = document.querySelector('.ajax__html_editor_extender_texteditor');
+    textArea.innerHTML =
         "Dear Team,<br>As per conversation on <|NUMBER|>, the client had lost connection. According to the client, <|MEASURES APPLIED|> has restored the connection.<br>Thank You!!!<br>The following data can be used for reference:"
 }
 function noInternetUnsolved() {
-    ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
+    const textArea = document.querySelector('.ajax__html_editor_extender_texteditor');
+    textArea.innerHTML =
         "Dear Team,<br>As per conversation on <|NUMBER|>, the client has lost connection. On further verification, <|THE CAUSE|> seems to be the root cause of the issue. Please perform the necessities asap.<br>Regards,<br>The following data can be used for reference:"
 }
 function noInternetOVCC() {
-    ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
+    const textArea = document.querySelector('.ajax__html_editor_extender_texteditor');
+    textArea.innerHTML =
         "Dear OVCC Team,<br>As per conversation on <|NUMBER|>, the client has lost connection. Please perform the necessities.<br>Regards,"
 }
 function slowInternetSolved() {
-    ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
+    const textArea = document.querySelector('.ajax__html_editor_extender_texteditor');
+    textArea.innerHTML =
         "Dear Team,<br>As per conversation on <|NUMBER|>, the client had sluggish connection. <|MEASURES APPLIED|> seems to have solved the issue according to the client. <br>Thank You!!!<br>The following data can be used for reference:"
 }
 function slowInternetUnsolved() {
-    ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
+    const textArea = document.querySelector('.ajax__html_editor_extender_texteditor');
+    textArea.innerHTML =
         "Dear Team,<br> As per conversation on <|NUMBER|>, the client has sluggish connection. Unfortunately, <|MEASURES APPLIED|> didnot seem to have solved the issue according to the client. Please proceed accordingly.<br>Regards,<br> The following data can be used for reference: "
 }
 function accountExtend() {
-    ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
+    const textArea = document.querySelector('.ajax__html_editor_extender_texteditor');
+    textArea.innerHTML =
         "Dear Sales Team,<br>As per conversation on <|NUMBER|>, the client wants to extend his subscription with promise to pay. Please proceed accordingly.<br>Regards, "
 }
 function paidAccountInactive() {
-    ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
+    const textArea = document.querySelector('.ajax__html_editor_extender_texteditor');
+    textArea.innerHTML =
         "Dear Team,<br>As per conversation on <|NUMBER|>, the client has already paid his subscription but his account is still inactive. Please perform the nesessities asap.<br>Regards,"
 }
 function assistanceRequired() {
-    ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
+    const textArea = document.querySelector('.ajax__html_editor_extender_texteditor');
+    textArea.innerHTML =
         "Dear Rf Team,<br>As per conversation on <|NUMBER|>, the client needs help with <|THE CAUSE|>. The client being technically naive has requested for field support, thus please provide the client with required assistance.<br>Regards,"
 }
 function remainderCall() {
-    ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
+    const textArea = document.querySelector('.ajax__html_editor_extender_texteditor');
+    textArea.innerHTML =
         "Dear Team,<br>**********REMAINDER CALL RECEIVED************<br>As per conversation on <|NUMBER|>, the client's lost connection has not yet been restored. Please perform the necessities asap for the client is pretty infuriated.<br>Also, the client wants to get updates about the situation and the estimated restoration time of his connection thus, please proceed accordingly.<br>Regards,"
 }
