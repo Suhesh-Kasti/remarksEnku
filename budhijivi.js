@@ -1,6 +1,11 @@
 // NO SIGNAL
+
+
 const noSig = document.querySelector('.noSignal');
+const contact = document.getElementById('contact')
+console.log(contact.value);
 noSig.addEventListener('click', async () => {
+    const contactNumber = contact.value;
     let [tab] = await chrome.tabs.query(
         {
             active: true,
@@ -11,7 +16,9 @@ noSig.addEventListener('click', async () => {
         {
             target: { tabId: tab.id },
             function: noSignal,
-        }
+            args: [contactNumber],
+         },
+
     )
 });
 
@@ -169,9 +176,14 @@ remind.addEventListener('click',async ()  => {
 });
 
 // START OF FUNCTIONS
-function noSignal() {
-    ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
-        "Dear L1/RF Team, <br> As per conversation on <|NUMBER|>, the client has no signal displayed on his Clear TV. Unfortunately, the issue remained unsolved from my end after tuner search and factory defaulting the STB, thus please perform the necessities asap.<br>Regards,<br> The following data was verified by the client on his TV:<br>Signal Strength=0<br>Signal Quality=0 ";
+function noSignal(number) {
+    const signal = document.getElementById('text');
+    // console.log(number);
+    // console.log('hello');
+    // signal.innerHTML = '<span>Hello world</span>'
+    signal.innerText = number
+    // ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
+    //     "Dear L1/RF Team, <br> As per conversation on <|NUMBER|>, the client has no signal displayed on his Clear TV. Unfortunately, the issue remained unsolved from my end after tuner search and factory defaulting the STB, thus please perform the necessities asap.<br>Regards,<br> The following data was verified by the client on his TV:<br>Signal Strength=0<br>Signal Quality=0 ";
 }
 function noInternetSolved() {
     ContentPlaceHolder1_HtmlEditorExtender1_ExtenderContentEditable.innerHTML =
