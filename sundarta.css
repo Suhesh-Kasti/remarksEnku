@@ -1,24 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Tangerine:wght@400;700&display=swap');
 
+::-webkit-scrollbar {
+    height: 10px;
+    margin-bottom: 10px;
+  }
+::-webkit-scrollbar-track {
+    background: #adadad;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border-radius: 100vw;
+  }
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #e6e6e6;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 100vw;
+  }
+
 html{
     height:32rem;
-    width:45rem;
-    overflow: hidden;
+    width: 60rem;
+}
+.clickables{
+    display: flex ;
 }
 body{
     background-color: #ececec;
-    padding: 10;
-    margin:10;
+    padding:20;
+    margin:20;
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
 }
 .intro{
     height:4rem;
-    width:45rem;
+    width: 73rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.socials{
+    height: 2rem;
+    width:15rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+    height:20px;
+    width:20px;
 }
 .logo{
     font-family: 'Tangerine', cursive;

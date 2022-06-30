@@ -46,7 +46,7 @@ Regards,
 '''
 paidButInactive='''
 Dear Team,
-As per conversation on <|NUMBER|>, the client has already paid his subscription but his account is still inactive. Please perform the nesessities asap.
+As per conversation on <|NUMBER|>, the client has already paid his subscription but his account is still inactive. Please perform the necessities asap.
 Regards,
 '''
 passwordChange='''
