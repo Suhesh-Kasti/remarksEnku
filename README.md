@@ -21,7 +21,7 @@ The install process would not have been this tedious if I had enough _money_ for
 
 ## Screenshots
 
-![Extension Screenshot](./images/How_do_I_look_like.jpg)
+![Extension Screenshot](./remarksEnku-chromium/images/How_do_I_look_like.jpg)
 
 
 ## Usage
