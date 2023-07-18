@@ -517,7 +517,7 @@ connectshift.addEventListener('click', async () => {
 function noSignal(caller) {
     const textArea = document.querySelector('.ajax__html_editor_extender_texteditor');
     textArea.innerHTML =
-        "Dear L1/RF Team, </br> As per conversation on " + caller +", the client has no signal displayed on his Clear TV. Unfortunately, the issue remained unsolved from my end after tuner search and factory defaulting the STB, thus please perform the necessities asap.</br>Regards,</br> The following data was verified by the client on his TV:</br>Signal Strength=0</br>Signal Quality=0 ";
+        "Dear L1/RF Team, </br> As per conversation on " + caller +", the client has no signal displayed on his Clear TV. Unfortunately, the issue remained unsolved from my end after tuner search , thus please perform the necessities asap.</br>Regards,</br> The following data was verified by the client on his TV:</br>Signal Strength=0</br>Signal Quality=0 ";
 }
 function channelScratches(caller) {
     const textArea = document.querySelector('.ajax__html_editor_extender_texteditor');
