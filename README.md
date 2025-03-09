@@ -1,7 +1,7 @@
 
-# _remarksEnku_
+# _remarksEnks_
 
-A simple ticket remarks writer for lazy people to automate the boring ticket writing process.... 
+A simple ticket remarks writer for lazy people to automate the boring ticket writing process.... with help by [Shrijana](https://github.com/ShrijanaKhatiwada)
 
 ## Installation for firefox based browsers
 - To use the extension first either clone the repository or download the zip and extract it.
